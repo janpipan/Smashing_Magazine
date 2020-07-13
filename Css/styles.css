@@ -1,6 +1,7 @@
-html{
+body{
   box-sizing: border-box;
   font-family:Arial;
+  transition: .5s ease-out;
 }
 button{
   background-color: transparent;
@@ -9,12 +10,16 @@ button{
 button:hover{
   cursor: pointer;
 }
+b{
+  font-weight: bold;
+}
 section{
-  display:none;
+  display: none;
 }
 footer{
   display:none;
 }
+
 /* header */
 header{
   width: 100%;
@@ -30,6 +35,9 @@ header{
 }
 .desktop-logo{
   display:none;
+  width: 200px;
+  position: relative;
+  top: 10px;
 }
 .mobile-logo{
   display:block;
@@ -44,19 +52,21 @@ header{
   grid-column: 2/-1;
   justify-self: end;
 }
+
 /* menu button */
 .mobile-nav{
   text-align:center;
 }
-.menu button, .more button{
+.menu button, .more-button{
   height: 50px;
   border:none;
-  background-color: #a92e23;
+  background-color: rgb(169,46,35);
   color: white;
   font-size: 1.5em;
   font-weight: bold;
   border-radius: 10px;
 }
+
 /* search bar */
 svg{
   width:40px;
@@ -86,6 +96,8 @@ svg line{
 .input-search:focus{
   outline:none;
 }
+
+/* nav media queries */
 @media only screen and (min-width:490px){
   .header-container{
     grid-template-columns: min-content min-content 4fr;
@@ -120,7 +132,7 @@ svg line{
     overflow: hidden;
     justify-content: space-between;
   }
-  .vis-nav li{
+  .vis-item{
     height: 50px;
     white-space: nowrap;
     font-size: 1.5em;
@@ -137,8 +149,130 @@ svg line{
     display: none;
   }
 }
+@media only screen and (min-width: 1350px){
+  .desktop-logo{
+    display: block;
+  }
+  .mobile-logo{
+    display: none;
+  }
+}
 
+/* main articles */
 
+/* articles title */
+.top-posts{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(169,46,35);
+  flex-wrap: wrap;
+}
+.top-posts-title{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 3em;
+}
+.top-posts-title span{
+  background-color: white;
+  padding: .3em .4em;
+  line-height: 1.4em;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+/* articles */
+.article{
+  color: white;
+  margin-bottom: 20px;
+}
+.article:nth-child(2n+1){
+  background-color: rgb(193,55,42);
+}
+.article-container{
+  margin: 10px 10px;
+}
+
+/* author image box */
+.author-image img{
+  width: 70px;
+  position: relative;
+  float: left;
+  transform: scale(1.2)rotate(10deg);
+}
+.author-image{
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  border: 5px solid white;
+  border-radius: 7px;
+  transform: rotate(-10deg);
+  overflow: hidden;
+  margin: 10px;
+}
+
+/* article info */
+.author-name{
+  position: relative;
+  top: -50px;
+  left: 10px;
+}
+.article-info{
+  margin-left: 10px;
+}
+.article-title{
+  display: inline;
+  font-weight: bold;
+  font-size: 1.75em;
+  text-transform: capitalize;
+  line-height: 1.2em;
+  margin-right: 5px;
+}
+.comments{
+  font-weight: bold;
+  text-transform: capitalize;
+  white-space: nowrap;
+  line-height: 1.2em;
+}
+
+/* article footer */
+.hash{
+  padding-right: 10px;
+}
+.hash::before{
+  content:'#';
+  color: black;
+}
+.hashtags{
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 60px 0 60px 10px;
+  display: flex;
+  font-size: .75em;
+}
+
+/* arrow styling */
+.arrow{
+  margin: 10px;
+}
+.arrow:after{
+  content:'';
+  display: inline-block !important;
+  width: 0;
+  height: 0;
+  border-left: 8px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  vertical-align: middle;
+}
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: white;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 
 

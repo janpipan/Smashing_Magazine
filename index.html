@@ -17,22 +17,25 @@
 
         <nav class="site-nav">
           <ul class="vis-nav desktop-nav">
-            <li class="articles"><a href="#">Articles</a></li>
-            <li class="guides"><a href="#">Guides</a></li>
-            <li class="books"><a href="#">Books</a></li>
-            <li class="events"><a href="#">Events</a></li>
-            <li class="memberships"><a href="#">Memberships</a></li>
-            <li class="jobs"><a href="#">Jobs</a></li>
-            <li class="newsletter"><a href="#">Newsletter</a></li>
-            <li class="podcasts"><a href="#">Podcasts</a></li>
-            <li class="write-for-us"><a href="#">Write for us</a></li>
-            <li class="advertise-with-us"><a href="#">Advertise with us</a></li>
-          </ul>
-          <ul class="overflow desktop-nav">
-            <li class="more">
-              <button type="button" name="button">More</button>
+            <li class="articles vis-item"><a href="#">Articles</a></li>
+            <li class="guides vis-item"><a href="#">Guides</a></li>
+            <li class="books vis-item"><a href="#">Books</a></li>
+            <li class="events vis-item"><a href="#">Events</a></li>
+            <li class="memberships vis-item"><a href="#">Memberships</a></li>
+            <li class="jobs vis-item"><a href="#">Jobs</a></li>
+            <li class="newsletter vis-item"><a href="#">Newsletter</a></li>
+            <li class="podcasts vis-item"><a href="#">Podcasts</a></li>
+            <li class="write-for-us vis-item"><a href="#">Write for us</a></li>
+            <li class="advertise-with-us vis-item"><a href="#">Advertise with us</a></li>
+            <li class="more-button vis-item">
+              <button type="button" name="button" class="more-button">More</button>
+              <ul class="overflow">
+                <li class="more">
+                </li>
+              </ul>
             </li>
           </ul>
+
           <ul class="mobile-nav">
             <li class="menu">
               <button type="button" name="button">Menu</button>
@@ -53,9 +56,77 @@
       </header>
 
     <section class="top-posts">
-      <div class="article1"></div>
-      <div class="article2"></div>
-      <div class="article3"></div>
+      <div class="top-posts-title">
+        <span>Don't miss these latest</span> <br><span>articles</span>
+      </div>
+      <div class="article1 article">
+        <div class="article-container">
+          <div class="author-image">
+            <img src="./Pictures/profile-pic.png" alt="">
+          </div>
+          <span class="author-name"><b>Ari Stiles</b> wrote</span>
+          <div class="article-info">
+            <h4 class="article-title">a book release for click! and a chance to rethink out routines</h4>
+            <span class="comments">leave a comment</span>
+          </div>
+          <ul class="hashtags">
+            <li class="hash hash-smashing-books">smashing books</li>
+          </ul>
+          <span class="arrow"></span>
+        </div>
+      </div>
+      <div class="article2 article">
+        <div class="article-container">
+          <div class="author-image">
+            <img src="./Pictures/profile-pic.png" alt="">
+          </div>
+          <span class="author-name"><b>Timi Omoyeni</b> wrote</span>
+          <div class="article-info">
+            <h4 class="article-title">Css transisions in vuejs and nuxtjs</h4>
+            <span class="comments">leave a comment</span>
+          </div>
+          <ul class="hashtags">
+            <li class="hash-css hash">css</li>
+            <li class="hash-vue hash">vue</li>
+            <li class="hash-js hash">javascript</li>
+          </ul>
+          <span class="arrow"></span>
+        </div>
+      </div>
+      <div class="article3 article">
+        <div class="article-container">
+          <div class="author-image">
+            <img src="./Pictures/profile-pic.png" alt="">
+          </div>
+          <span class="author-name"><b>Suzanne Scacca</b> wrote</span>
+          <div class="article-info">
+            <h4 class="article-title">removing panic from e-commerce shipping and inventory alerts</h4>
+            <span class="comments">leave a comment</span>
+          </div>
+          <ul class="hashtags">
+            <li class="hash-design hash">desing</li>
+            <li class="hash-ecommerce hash">e-commerce</li>
+          </ul>
+          <span class="arrow"></span>
+        </div>
+      </div>
+      <div class="article4 article">
+        <div class="article-container">
+          <div class="author-image">
+            <img src="./Pictures/profile-pic.png" alt="">
+          </div>
+          <span class="author-name"><b>kelvin omershone</b> wrote</span>
+          <div class="article-info">
+            <h4 class="article-title">creating tiny desktop apps with tauri and vue.js</h4>
+            <span class="comments">3 comments</span>
+          </div>
+          <ul class="hashtags">
+            <li class="hash-vue hash">vue</li>
+            <li class="hash-js hash">javascript</li>
+          </ul>
+          <span class="arrow"></span>
+        </div>
+      </div>
     </section>
 
     <section class="latest-posts">
@@ -121,7 +192,7 @@
       </div>
       <div class="email-newsletter">
         <img src="" alt="">
-        <h4><a href="">Email Newsletter</a></h4>
+        <h3><a href="">Email Newsletter</a></h3>
         <p>Every second Tuesday, we send an email newsletter with useful techniques on front-end and UX. Subscribe and get <strong>Smart Interface Desing Checklists PDF in yout inbox.</strong></p>
         <div class="email-button"></div>
         <p>Front-end, UX and design. 2x a month. You can always unsubscribe with just one click.</p>
@@ -185,7 +256,7 @@
         </ul>
       </div>
     </footer>
-    <script type="text/javascript" src="./JavaScript/script.js">
+    <script type="text/javascript" src="./JavaScript/nav.js">
 
     </script>
   </body>
