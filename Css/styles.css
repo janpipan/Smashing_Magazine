@@ -86,7 +86,7 @@ svg line{
   border-radius: 10px;
   display: flex;
   align-items: center;
-  background-color:white;
+  background-color: white;
 }
 .input-search{
   border: transparent;
@@ -323,9 +323,138 @@ svg line{
   }
 }
 
-
-
-
+/* lastest posts/articles */
+.latest-posts{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+.title-latest-posts{
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+.latest-articles{
+  padding: 25px;
+}
+.article-time{
+  color: grey;
+  font-size: .75em;
+}
+.article-time::first-letter{
+  font-weight: bold;
+}
+.latest-articles-title{
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  padding: 10px 0;
+}
+.author{
+  color: grey;
+  font-weight: bold;
+  font-size: .9em;
+  margin: 10px 0 20px 0;
+}
+.author span{
+  text-decoration: underline;
+}
+.description{
+  word-spacing: .1em;
+  color: dimgray;
+  margin-bottom: 20px;
+}
+.arrow-red{
+  margin: 10px 0;
+}
+.arrow-red:after{
+  border-left: 4px solid red;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+.arrow-red:before {
+  width: 20px;
+  height: 1px;
+  background: red;
+}
+/* mid articles features */
+.mid-features{
+  background-color: #d33a2c;
+  margin: 30px;
+  padding: 50px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.mid-features img{
+  width: 225px;
+}
+.features-header{
+  display: inline;
+  font-weight: bold;
+  font-size: 1.75em;
+  border-bottom: 3px solid rgb(230, 230, 230, .5);
+}
+.features-description{
+  padding: 20px 30px;
+  word-spacing: .2em;
+  line-height: 1.5em;
+}
+.features-description span{
+  border-bottom: 3px solid rgb(230, 230, 230, .5);
+}
+/* mid features button */
+.explore-features{
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  color: #267dcc;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+.arrow-blue{
+  margin-left: 5px;
+}
+.arrow-blue:after{
+  border-left: 3px solid #267dcc;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+.arrow-blue:before {
+  width: 10px;
+  height: 1px;
+  background: #267dcc;
+}
+.sign-in{
+  font-size: 0.8em;
+}
+.sign-in span{
+  text-decoration: underline;
+}
+/* see all articles */
+.see-all{
+  color: dimgray;
+  text-align: center;
+}
+.see-all-button{
+  border-bottom: 3px solid #d33a2c;
+}
+.arrow-black{
+  margin-left: 5px;
+  display: inline;
+}
+.arrow-black:after{
+  border-left: 2.5px solid black;
+  border-top: 2.5px solid transparent;
+  border-bottom: 2.5px solid transparent;
+}
+.arrow-black:before {
+  width: 10px;
+  height: 1px;
+  background: black;
+}
 
 
 
