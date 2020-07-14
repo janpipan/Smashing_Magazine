@@ -1,7 +1,8 @@
 body{
   box-sizing: border-box;
   font-family:Arial;
-  transition: .5s ease-out;
+  display: flex;
+  flex-direction: column;
 }
 button{
   background-color: transparent;
@@ -149,6 +150,7 @@ svg line{
     display: none;
   }
 }
+/* logo switch up */
 @media only screen and (min-width: 1350px){
   .desktop-logo{
     display: block;
@@ -172,6 +174,7 @@ svg line{
   width: 100%;
   text-align: center;
   margin-top: 3em;
+  height: 150px;
 }
 .top-posts-title span{
   background-color: white;
@@ -179,14 +182,18 @@ svg line{
   line-height: 1.4em;
   font-size: 1.75em;
   font-weight: bold;
+  text-transform: capitalize;
+}
+.top-posts-title-button{
+  display: none;
 }
 
 /* articles */
 .article{
   color: white;
-  margin-bottom: 20px;
+  padding: 30px 0;
 }
-.article:nth-child(2n+1){
+.article:nth-child(2n){
   background-color: rgb(193,55,42);
 }
 .article-container{
@@ -257,7 +264,7 @@ svg line{
 }
 .arrow:after{
   content:'';
-  display: inline-block !important;
+  display: inline-block;
   width: 0;
   height: 0;
   border-left: 8px solid white;
@@ -274,6 +281,47 @@ svg line{
   vertical-align: middle;
 }
 
+@media only screen and (min-width:750px){
+  .top-posts{
+    flex-direction: row;
+  }
+  .article{
+    flex: 1 0 50%;
+  }
+  .article1, .article2{
+    padding-top: 175px;
+  }
+  .top-posts > div:nth-child(3n){
+    background-color: rgb(188,52,40);
+  }
+  .top-posts-title{
+    position: absolute;
+    overflow:hidden;
+  }
+  .top-posts-title-button{
+    display: block;
+    position: absolute;
+    top: 175px;
+    right: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px;
+  }
+}
+@media only screen and (min-width:1920px){
+  .article{
+    flex-basis: 33%;
+  }
+  .article3{
+    padding-top: 175px;
+  }
+  .article4{
+    display: none;
+  }
+}
 
 
 
